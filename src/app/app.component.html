@@ -21,6 +21,9 @@
     <li *ngSwitchCase="8" class="list-group-item">
         É IGUAL A 8
     </li>
+    <li *ngSwitchCase="10" class="list-group-item">
+        É IGUAL A 10
+    </li>
     <li *ngSwitchDefault class="list-group-item">
         ESSE É O DEFAULT
     </li>
@@ -31,3 +34,11 @@
         O nome da pessoa é {{pessoa.nome}} {{pessoa.sobrenome}}.
     </li>
 </ul>
+
+<h3 class="text-center">{{nome}}</h3>
+<button class="btn btn-success col-4 mx-auto" (click)="clicou('Phillip')">Clique</button>
+
+<div class="col-4 mx-auto">
+    <input type="text" class="form-control" placeholder="Digite aqui" [(ngModel)]="text">
+    <h4> Saida: {{text}}</h4>
+</div>
