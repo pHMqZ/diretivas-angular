@@ -1,8 +1,8 @@
-<h1 class="text-sucess text-center">Diretivas Angular - Live</h1>
+<h1 class="text-sucess text-center" appMarcaTexto corDeFundo="red" corDoTexto="blue">Diretivas Angular - Live</h1>
 
 <!--Diretivas de Atributos-->
 <div [ngStyle]="{background: count < 5 ? 'red':'green'}" [ngClass]="{custom: count > 5}">
-    <h2 class="text-center">Contador: {{count}} </h2>
+    <h2 class="text-center" appMarcaTexto>Contador: {{count}} </h2>
 </div>
 
 <!--Diretivas Estruturais-->
@@ -35,7 +35,7 @@
     </li>
 </ul>
 
-<h3 class="text-center">{{nome}}</h3>
+<h3 class="text-center" appMarcaTexto corDeFundo="blue" corDoTexto="black">{{nome}}</h3>
 <button class="btn btn-success col-4 mx-auto" (click)="clicou('Phillip')">Clique</button>
 
 <div class="col-4 mx-auto">
