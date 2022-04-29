@@ -1,3 +1,6 @@
 <h1 class="text-sucess text-center">Diretivas Angular - Live</h1>
 
-<h2 class="text-center">Contador: 1</h2>
+<!--Diretivas de Atributos-->
+<div [ngStyle]="{background: count < 5 ? 'red':'green'}" [ngClass]="{custom: count > 5}">
+    <h2 class="text-center">Contador: {{count}} </h2>
+</div>
